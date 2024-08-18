@@ -50,6 +50,17 @@ jobs:
            name: unit-test-reports
            path: app/build/reports/tests/testDebugUnitTest
 
-            
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name:  Get test artifacts
+        uses: actions/download-artifacts@v3
+        with:
+          name: unit-test-reports
+
+      - name: output contents
+        run: ls
             
       
