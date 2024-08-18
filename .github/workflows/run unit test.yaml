@@ -44,12 +44,12 @@ jobs:
       - name: Run Unit Tests
         run: ./gradlew testDebugUnitTest
 
-      - name : Upload artifacts
-        uses: actions/upload-artifacts@v3
+      - name: Upload Unit Test Reports
+        uses: actions/upload-artifact@v3
         with:
-          name: Test files
-          path: |
-            test.json
+           name: unit-test-reports
+           path: app/build/reports/tests/testDebugUnitTest
+
             
             
       
