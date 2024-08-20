@@ -46,12 +46,11 @@ jobs:
       - name: Run Unit Tests
         run: ./gradlew testDebugUnitTest
 
-      - name: Publish Outbut Filename
+      - name: Publish Output Filename
         id: publish
         run: |
           echo "output-file=unit-test-output.txt" >> $GITHUB_ENV
-        outputs:
-          output-file: ${{ env.output-file }}
+    
 
       - name: Upload Unit Test Reports
         uses: actions/upload-artifact@v3
