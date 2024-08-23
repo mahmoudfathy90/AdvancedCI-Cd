@@ -11,3 +11,8 @@ jobs:
     steps:
       - name: Output event details
         run: echo "${{ toJSON(github.event) }}"
+    test_branch_filter2:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Output event details
+          run: echo "${{ toJSON(github.event) }}"
