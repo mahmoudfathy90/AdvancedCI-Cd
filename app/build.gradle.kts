@@ -4,11 +4,19 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.example.advancedci_cd"
     compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.advancedci_cd"
+=======
+    namespace = "com.example.advancedcicd"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.example.advancedcicd"
+>>>>>>> 41479f9f00ab92a15551d81dec9fb7f3ac556a95
         minSdk = 24
         targetSdk = 34
         versionCode = 1
