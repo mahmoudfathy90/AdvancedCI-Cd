@@ -13,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      # Define environment variables here that are accessible to all steps in this job
       ANDROID_COMPILE_SDK: 33
       ANDROID_BUILD_TOOLS: 33.0.0
       JAVA_VERSION: 11
